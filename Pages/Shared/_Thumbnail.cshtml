@@ -1,33 +1,19 @@
 ﻿@model Thumbnail
 
 <div class="video-preview">
-<div class="thumbnail-row">
-    <img class="thumbnail" src="thumbnails/@(Model.ThumbnailPic).webp">
-    <div class="video-time"><label>@Model.VideoTime</label></div>
-</div>
-<div class="video-info-grid">
-    <div class="channel-picture">
-        <img class="profile-picture" src="channel-pictures/@(Model.ChannelPic).jpeg">
+    <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/@(Model.ThumbnailPic).webp">
+        <div class="video-time"><label>@Model.VideoTime</label></div>
     </div>
-    <div class="video-info">
-        <p class="video-title">
-            @Model.VideoTitle
-
-        </p>
-        <p class="video-author">
-            @Model.VideoAuthor
-        </p>
-            <label class="video-views">
-
-                @Model.ViewCount
-                
-
-            </label>
-       <label class="video-stats">
-            
-            @Model.VideoStats
-
-        </label>
+    <div class="video-info-grid">
+        <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/@(Model.ChannelPic).jpeg">
+        </div>
+        <div class="video-info">
+            <p class="video-title">@Model.VideoTitle</p>
+            <p class="video-author">@Model.VideoAuthor</p>
+            <label class="video-views">@Model.ViewCount</label>
+            <label class="video-stats">@Model.VideoStats</label>
+        </div>
     </div>
-</div>
 </div>

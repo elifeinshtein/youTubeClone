@@ -1,0 +1,16 @@
+**/obj/
+**/.vs
+**/.vscode
+**/logipass/logipass/**
+*.mdf
+*.ldf
+.vs
+**/publish
+**/wwwroot/**/*.css
+**/Release/
+**/Debug/
+**/.idea
+*.csproj.user
+*.pubxml.user
+dist
+node_modules

@@ -22,7 +22,7 @@
             VideoTime = "14:20",
             ChannelPic = "channel-1",
             VideoTitle = "Talking Tech and AI with Google CEO Sundar Pichai!",
-            VideoAuthor = "Marques Brownlee", 
+            VideoAuthor = "Marques Brownlee",
             ViewCount = 15,
             VideoStats = "views • 6 months ago"
         },
@@ -30,13 +30,12 @@
         {
             ThumbnailPic = "thumbnail-2",
             VideoTime = "9:13",
-            ChannelPic = "channel-2", 
+            ChannelPic = "channel-2",
             VideoTitle = "Try Not To Laugh Challenge #9",
-            VideoAuthor = "Markiplier", 
+            VideoAuthor = "Markiplier",
             ViewCount = 11,
             VideoStats = "views • 4 years ago"
         },
-    
         new Thumbnail
         {
             ThumbnailPic = "thumbnail-3",
@@ -47,7 +46,6 @@
             ViewCount = 18,
             VideoStats = " views • 1 year ago"
         },
-    
         new Thumbnail
         {
             ThumbnailPic = "thumbnail-4",
@@ -58,7 +56,6 @@
             ViewCount = 25,
             VideoStats = " views • 4 months ago"
         },
-
         new Thumbnail
         {
             ThumbnailPic = "thumbnail-5",
@@ -69,18 +66,16 @@
             ViewCount = 43,
             VideoStats = " views • 5 years ago"
         },
-
-    new Thumbnail
-    {
-        ThumbnailPic = "thumbnail-6",
-        VideoTime = "19:59",
-        ChannelPic = "channel-6",
-        VideoTitle = "Anything You Can Fit In The Circle I’ll Pay For",
-        VideoAuthor = " MrBeast", 
-        ViewCount = 78,
-        VideoStats = " views • 1 year ago"
-    }
-
+        new Thumbnail
+        {
+            ThumbnailPic = "thumbnail-6",
+            VideoTime = "19:59",
+            ChannelPic = "channel-6",
+            VideoTitle = "Anything You Can Fit In The Circle I’ll Pay For",
+            VideoAuthor = " MrBeast",
+            ViewCount = 78,
+            VideoStats = " views • 1 year ago"
+        }
     };
 }
 <!DOCTYPE html>
@@ -138,18 +133,17 @@
     <div class="sidebar">
         @foreach (var link in links)
         {
-            <partial name="Shared/_Link" model="link"/>
+            <partial name="Shared/_Link" model="link" />
         }
     </div>
-   
-         
-<div class="video-grid">
-    @foreach (var thumbnail in thumbnails)
-    {
-        <script src="js/index.js"></script>
-        <partial name="Shared/_Thumbnail" model="thumbnail"/>
-    }
 
-</div>
+    <div class="video-grid">
+        @foreach (var thumbnail in thumbnails)
+        {
+            <script src="js/index.js"></script>
+            <partial name="Shared/_Thumbnail" model="thumbnail" />
+        }
+
+    </div>
 </body>
 </html>
