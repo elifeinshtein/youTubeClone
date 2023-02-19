@@ -1,0 +1,153 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\sample.bundle.scp.css",
+      "PackagePath": "staticwebassets\\sample.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\channel-pictures\\channel-1.jpeg",
+      "PackagePath": "staticwebassets\\channel-pictures\\channel-1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\channel-pictures\\channel-2.jpeg",
+      "PackagePath": "staticwebassets\\channel-pictures\\channel-2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\channel-pictures\\channel-3.jpeg",
+      "PackagePath": "staticwebassets\\channel-pictures\\channel-3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\channel-pictures\\channel-4.jpeg",
+      "PackagePath": "staticwebassets\\channel-pictures\\channel-4.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\channel-pictures\\channel-5.jpeg",
+      "PackagePath": "staticwebassets\\channel-pictures\\channel-5.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\channel-pictures\\channel-6.jpeg",
+      "PackagePath": "staticwebassets\\channel-pictures\\channel-6.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\channel-pictures\\my-channel.jpeg",
+      "PackagePath": "staticwebassets\\channel-pictures\\my-channel.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\css\\General.css",
+      "PackagePath": "staticwebassets\\css\\General.css"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\css\\Header.css",
+      "PackagePath": "staticwebassets\\css\\Header.css"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\css\\Sidebar.css",
+      "PackagePath": "staticwebassets\\css\\Sidebar.css"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\css\\Video.css",
+      "PackagePath": "staticwebassets\\css\\Video.css"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\icons\\explore.svg",
+      "PackagePath": "staticwebassets\\icons\\explore.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\icons\\hamburger-menu.svg",
+      "PackagePath": "staticwebassets\\icons\\hamburger-menu.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\icons\\home.svg",
+      "PackagePath": "staticwebassets\\icons\\home.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\icons\\library.svg",
+      "PackagePath": "staticwebassets\\icons\\library.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\icons\\notifications.svg",
+      "PackagePath": "staticwebassets\\icons\\notifications.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\icons\\originals.svg",
+      "PackagePath": "staticwebassets\\icons\\originals.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\icons\\search.svg",
+      "PackagePath": "staticwebassets\\icons\\search.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\icons\\subscriptions.svg",
+      "PackagePath": "staticwebassets\\icons\\subscriptions.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\icons\\upload.svg",
+      "PackagePath": "staticwebassets\\icons\\upload.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\icons\\voice-search-icon.svg",
+      "PackagePath": "staticwebassets\\icons\\voice-search-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\icons\\youtube-apps.svg",
+      "PackagePath": "staticwebassets\\icons\\youtube-apps.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\icons\\youtube-logo.svg",
+      "PackagePath": "staticwebassets\\icons\\youtube-logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\icons\\youtube-music.svg",
+      "PackagePath": "staticwebassets\\icons\\youtube-music.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\thumbnails\\thumbnail-1.webp",
+      "PackagePath": "staticwebassets\\thumbnails\\thumbnail-1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\thumbnails\\thumbnail-2.webp",
+      "PackagePath": "staticwebassets\\thumbnails\\thumbnail-2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\thumbnails\\thumbnail-3.webp",
+      "PackagePath": "staticwebassets\\thumbnails\\thumbnail-3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\thumbnails\\thumbnail-4.webp",
+      "PackagePath": "staticwebassets\\thumbnails\\thumbnail-4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\thumbnails\\thumbnail-5.webp",
+      "PackagePath": "staticwebassets\\thumbnails\\thumbnail-5.webp"
+    },
+    {
+      "Id": "C:\\Users\\Maor Gorbman\\source\\repos\\sample\\wwwroot\\thumbnails\\thumbnail-6.webp",
+      "PackagePath": "staticwebassets\\thumbnails\\thumbnail-6.webp"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.sample.props",
+      "PackagePath": "build\\sample.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.sample.props",
+      "PackagePath": "buildMultiTargeting\\sample.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.sample.props",
+      "PackagePath": "buildTransitive\\sample.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.sample.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
