@@ -6,7 +6,6 @@
 *.ldf
 .vs
 **/publish
-**/wwwroot/**/*.css
 **/Release/
 **/Debug/
 **/.idea
