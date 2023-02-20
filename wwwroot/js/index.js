@@ -1,24 +1,32 @@
-﻿var minSecInterval = 5;
-var maxSecInterval = 10;
-var minPercentage = 1;
-var maxPercentage = 5;
-var ViewCount = 1;
+﻿
+let Range = (start, multiplier) => Math.floor(start + Math.random() * start * (multiplier - 1));
 
-function findPercentage(min, max) {
-    return ((Math.random() * (max - min + 1) + min) / 100);
+function intToString(num) {
+    num = num.toString().replace(/[^0-9.]/g, '');
+    if (num < 1000) {
+        return num;
+    }
+    let si = [
+        { v: 1E3, s: "K" },
+        { v: 1E6, s: "M" },
+        { v: 1E9, s: "B" },
+        { v: 1E12, s: "T" },
+        { v: 1E15, s: "P" },
+        { v: 1E18, s: "E" }
+    ];
+    let index;
+    for (index = si.length - 1; index > 0; index--) {
+        if (num >= si[index].v) {
+            break;
+        }
+    }
+    return (num / si[index].v).toFixed(2).replace(/\.0+$|(\.[0-9]*[1-9])0+$/, "$1") + si[index].s;
 }
 
-function myFunction() {
+setInterval(() => document.querySelectorAll(".video-views").forEach(view => {
+    view.innerHTML = (intToString(Range(parseInt(view.innerHTML) + 5, 1.05)));
+}), Range(1000, 10));
 
-    var arr = document.querySelectorAll(".video-views");
 
-    arr.forEach(ViewCount => {
-        var numOfViews = parseInt(ViewCount.innerHTML);
-        numOfViews = Math.ceil(numOfViews * (1 + findPercentage(minPercentage, maxPercentage)));
-        ViewCount.innerHTML = numOfViews;
-    })
-   
-}
 
-var rand = Math.floor(Math.random() * (maxSecInterval - minSecInterval + 1) + minSecInterval); //Generate Random number between 5 - 10
-setInterval(myFunction, rand * 1000);
+

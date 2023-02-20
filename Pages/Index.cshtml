@@ -23,7 +23,7 @@
             ChannelPic = "channel-1",
             VideoTitle = "Talking Tech and AI with Google CEO Sundar Pichai!",
             VideoAuthor = "Marques Brownlee",
-            ViewCount = 15,
+            ViewCount = 1500,
             VideoStats = "views • 6 months ago"
         },
         new Thumbnail
@@ -82,10 +82,6 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube.com Clone</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -140,8 +136,8 @@
     <div class="video-grid">
         @foreach (var thumbnail in thumbnails)
         {
-            <script src="js/index.js"></script>
             <partial name="Shared/_Thumbnail" model="thumbnail" />
+            <script src="js/index.js" asp-append-version="true"></script>
         }
 
     </div>
