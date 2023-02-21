@@ -33,7 +33,7 @@
             ChannelPic = "channel-2",
             VideoTitle = "Try Not To Laugh Challenge #9",
             VideoAuthor = "Markiplier",
-            ViewCount = 11,
+            ViewCount = 1100,
             VideoStats = "views • 4 years ago"
         },
         new Thumbnail
@@ -43,7 +43,7 @@
             ChannelPic = "channel-3",
             VideoTitle = "Crazy Tik Toks Taken Moments Before DISASTER",
             VideoAuthor = "SSSniperWolf",
-            ViewCount = 18,
+            ViewCount = 1800,
             VideoStats = " views • 1 year ago"
         },
         new Thumbnail
@@ -53,7 +53,7 @@
             ChannelPic = "channel-4",
             VideoTitle = "The Simplest Math Problem No One Can Solve - Collatz Conjecture",
             VideoAuthor = "Veritasium",
-            ViewCount = 25,
+            ViewCount = 2500,
             VideoStats = " views • 4 months ago"
         },
         new Thumbnail
@@ -63,7 +63,7 @@
             ChannelPic = "channel-5",
             VideoTitle = "Kadane's Algorithm to Maximum Sum Subarray Problem",
             VideoAuthor = " CS Dojo",
-            ViewCount = 43,
+            ViewCount = 4300,
             VideoStats = " views • 5 years ago"
         },
         new Thumbnail
@@ -73,7 +73,7 @@
             ChannelPic = "channel-6",
             VideoTitle = "Anything You Can Fit In The Circle I’ll Pay For",
             VideoAuthor = " MrBeast",
-            ViewCount = 78,
+            ViewCount = 7800,
             VideoStats = " views • 1 year ago"
         }
     };
@@ -137,9 +137,11 @@
         @foreach (var thumbnail in thumbnails)
         {
             <partial name="Shared/_Thumbnail" model="thumbnail" />
-            <script src="js/index.js" asp-append-version="true"></script>
+            
         }
 
     </div>
+<script src="js/index.js" asp-append-version="true"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js" asp-append-version="true"></script>
 </body>
 </html>
