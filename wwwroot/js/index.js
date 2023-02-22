@@ -25,29 +25,28 @@ function FormatLongNumber(value) {
 
 function replace(str) {
     
-    if ((view.innerHTML).includes(',')) {
+    if( str.includes(',')) {
 
         return str.replaceAll(/,/g, "");
     }
 
-    else if ((view.innerHTML).includes('K')) {
+    else if (str.includes('K')) {
         return str.replaceAll(/K/g, '000');
     }
 
-    else if ((view.innerHTML).includes('M')) {
+    else if (str.includes('M')) {
         return str.replaceAll(/M/g, '000000');
     }
 
-    else if ((view.innerHTML).includes('B')) {
+    else if (str.includes('B')) {
         return str.replaceAll(/B/g, '000000000');
     }
 
     else
-        return view.innerHTML;
+        return str;
 }
 
 setInterval(() => document.querySelectorAll(".video-views").forEach(view => {
-
 
     view.innerHTML = FormatLongNumber(Range(Number(view.innerHTML) + 5, 1.05));
     
