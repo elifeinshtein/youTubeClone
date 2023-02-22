@@ -2,9 +2,8 @@
 
 function FormatLongNumber(value) {
 
-    if (value <= 9999)
-    {
-       
+    if (value <= 9999) {
+
         return value.toLocaleString("en-US");
     }
 
@@ -24,8 +23,8 @@ function FormatLongNumber(value) {
 }
 
 function replace(str) {
-    
-    if( str.includes(',')) {
+
+    if (str.includes(',')) {
 
         return str.replaceAll(/,/g, "");
     }
@@ -46,11 +45,33 @@ function replace(str) {
         return str;
 }
 
-setInterval(() => document.querySelectorAll(".video-views").forEach(view => {
+let IntervalFrequency = Range(1000, 3);
+console.log(`The interval frequency is: ${IntervalFrequency}ms`);
+console.log("-------------------------------"); // just creating an empty line
 
-    view.innerHTML = FormatLongNumber(Range(Number(view.innerHTML) + 5, 1.05));
-    
-    parseInt(replace(view.innerHTML));
+let Iteration = 0;
+setInterval(function () {
+    let ElementsToProcess = 1; // change this value to 6 in order to process all elements, I've set it to 1 in order to reduce the amount of logs being written
 
-}), Range(1000, 10));
+    console.log(`The function inside of setInterval is being called, current iteration: ${Iteration++}`);
 
+    document.querySelectorAll(".video-views").forEach(view => {
+        if (--ElementsToProcess < 0) return;
+
+        let current = view.innerHTML;
+        console.log(`The current value is: ${current}`);
+
+        let replaced = replace(current);
+        console.log(`The value after being cleaned from letters: ${replaced}`);
+
+        let number = Number(replaced); // turning the "clean value" into a number.
+        number = Range(number + 5, 1.05);
+        console.log(`The incremented number: ${number}`);
+
+        let formatted = FormatLongNumber(number);
+        console.log(`The formatted number: ${formatted}`);
+
+        view.innerHTML = formatted;
+    });
+    console.log("-------------------------------"); // just creating an empty line
+}, IntervalFrequency);
