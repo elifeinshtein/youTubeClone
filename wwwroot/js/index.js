@@ -1,61 +1,57 @@
 ﻿let Range = (start, multiplier) => Math.floor(start + Math.random() * start * (multiplier - 1));
 
-/*let nFormatter = (((num, digits) => Math.round(num * Math.pow(10, digits) / Math.pow(10, ('' + num).length - ('' + num).length % 3)) / Math.pow(10, digits) +
-    " KMGTPE"[('' + num).length - ('' + num).length % 3 / 3]));
+function FormatLongNumber(value) {
 
-*/
+    if (value <= 9999)
+    {
+       
+        return value.toLocaleString("en-US");
+    }
 
+    else if (value >= 10000 && value <= 999999) {
+        return (value / 1000) + 'K';
+    }
 
-let FormatLongNumber = (value) => ((value < 9999) ? value : (value >= 10000 && value <= 999999) ? (value / 1000) + 'K' : (value >= 1000000 && value <= 999999999) ? (value / 1000000) + 'M' : (value >= 1000000000 && value <= 999999999999) ? (value / 1000000000) + 'B' : value);
+    else if (value >= 1000000 && value <= 999999999) {
+        return (value / 1000000) + 'M';
+    }
+
+    else if (value >= 1000000000 && value <= 999999999999) {
+        return (value / 1000000000) + 'B';
+    }
+    else
+        return value;
+}
+
+function replace(str) {
+    
+    if ((view.innerHTML).includes(',')) {
+
+        return str.replaceAll(/,/g, "");
+    }
+
+    else if ((view.innerHTML).includes('K')) {
+        return str.replaceAll(/K/g, '000');
+    }
+
+    else if ((view.innerHTML).includes('M')) {
+        return str.replaceAll(/M/g, '000000');
+    }
+
+    else if ((view.innerHTML).includes('B')) {
+        return str.replaceAll(/B/g, '000000000');
+    }
+
+    else
+        return view.innerHTML;
+}
 
 setInterval(() => document.querySelectorAll(".video-views").forEach(view => {
 
 
-    view.innerHTML = Number(FormatLongNumber((Range(Number(view.innerHTML) + 5, 1.05))));
-
-    console.log(Number(FormatLongNumber((Range(Number(view.innerHTML) + 5, 1.05)), 3)));
-
+    view.innerHTML = FormatLongNumber(Range(Number(view.innerHTML) + 5, 1.05));
+    
+    parseInt(replace(view.innerHTML));
 
 }), Range(1000, 10));
 
-
-
-
-/*
-function m(n, d) {
-    x = ('' + n).length, p = Math.pow, d = p(10, d)
-    x -= ('' + n).length % 3
-    return Math.round(n * d / p(10, x)) / d + " kMGTPE"[x / 3]
-}
-
-
-
-function FormatLongNumber(value) {
-   
-       
-        // hundreds
-        if (value <= 9999) {
-            return value;
-        }
-        // thousands
-        else if (value >= 10000 && value <= 999999) {
-            return (value / 1000) + 'K';
-        }
-        // millions
-        else if (value >= 1000000 && value <= 999999999) {
-            return (value / 1000000) + 'M';
-        }
-        // billions
-        else if (value >= 1000000000 && value <= 999999999999) {
-            return (value / 1000000000) + 'B';
-        }
-        else
-            return value;
-    }
-}
-
-*/
-
-/*let FormatLongNumber = (value) => ((value < 9999) ? value : (value >= 10000 && value <= 999999) ? (value / 1000) + 'K' : (value >= 1000000 && value <= 999999999) ? (value / 1000000) + 'M' : (value >= 1000000000 && value <= 999999999999) ? (value / 1000000000) + 'B' : value);
-
-*/
