@@ -2,9 +2,8 @@
 
 function FormatLongNumber(value) {
 
-    if (value <= 9999)
-    {
-       
+    if (value <= 9999) {
+
         return value.toLocaleString("en-US");
     }
 
@@ -24,9 +23,20 @@ function FormatLongNumber(value) {
 }
 
 function replace(str) {
+<<<<<<< HEAD
  
      if (str.includes('K')) {
          return 1000 * parseFloat(str);
+=======
+
+    if (str.includes(',')) {
+
+        return str.replaceAll(/,/g, "");
+    }
+
+    else if (str.includes('K')) {
+        return str.replaceAll(/K/g, '000');
+>>>>>>> cdc223fe787a4557bd75901e47a12692b3a12f79
     }
 
     else if (str.includes('M')) {
@@ -41,6 +51,7 @@ function replace(str) {
          return 1 *parseFloat(Number(str));
 }
 
+<<<<<<< HEAD
 
 let IntervalFrequency = Range(1000, 3);
 console.log(`The interval frequency is: ${IntervalFrequency}ms`);
@@ -52,6 +63,18 @@ setInterval(function () {
 
     console.log(`The function inside of setInterval is being called, current iteration: ${Iteration++}`);
 
+=======
+let IntervalFrequency = Range(1000, 3);
+console.log(`The interval frequency is: ${IntervalFrequency}ms`);
+console.log("-------------------------------"); // just creating an empty line
+
+let Iteration = 0;
+setInterval(function () {
+    let ElementsToProcess = 1; // change this value to 6 in order to process all elements, I've set it to 1 in order to reduce the amount of logs being written
+
+    console.log(`The function inside of setInterval is being called, current iteration: ${Iteration++}`);
+
+>>>>>>> cdc223fe787a4557bd75901e47a12692b3a12f79
     document.querySelectorAll(".video-views").forEach(view => {
         if (--ElementsToProcess < 0) return;
 
